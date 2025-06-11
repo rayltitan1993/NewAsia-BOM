@@ -1,0 +1,27 @@
+/* public/style.css */
+body { 
+    font-family: 'Inter', sans-serif; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+}
+@media print {
+    .no-print { display: none; }
+    body * { visibility: hidden; }
+    #bomOutput, #bomOutput * { visibility: visible; }
+    #bomOutput { position: absolute; left: 0; top: 0; width: 100%; }
+}
+.fade-in { animation: fadeIn 0.5s ease-in-out; }
+@keyframes fadeIn { 
+    from { opacity: 0; transform: translateY(-10px); } 
+    to { opacity: 1; transform: translateY(0); } 
+}
+.spinner { 
+    border: 2px solid rgba(0, 0, 0, 0.1); 
+    border-radius: 50%; 
+    border-top-color: #4f46e5; 
+    width: 16px; 
+    height: 16px; 
+    animation: spin 1s ease-in-out infinite; 
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.highlight-diff { background-color: #fffbe6; }

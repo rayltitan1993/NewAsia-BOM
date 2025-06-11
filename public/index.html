@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单BOM管理系统 (局域网版)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div id="app" class="min-h-screen flex flex-col justify-center items-center">
+        <!-- App content is rendered here by app.js -->
+        <div class="text-center">
+            <div class="spinner" style="width:40px; height:40px; border-width:4px;"></div>
+            <p class="mt-4 text-gray-600">正在连接服务器...</p>
+        </div>
+    </div>
+    
+    <div id="modal-container"></div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
